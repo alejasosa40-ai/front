@@ -16,7 +16,7 @@ function enviarMensaje() {
   }
 
 
-  axios.post("/subir", Mensaje)
+  axios.post("https://proyecto2-ugkg.onrender.com/subir", Mensaje)
   .then(function (res) {
     alert("el mensaje se envio");
     setTimeout (function(){router.push("./futuro");
